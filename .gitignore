@@ -1,0 +1,32 @@
+# Ambiente virtual
+venv/
+.venv/
+env/
+
+# Chave de API (NUNCA suba isso!)
+.env
+*.env
+config.py
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Arquivos de dados (CSVs e planilhas podem ter dados sensíveis)
+*.csv
+*.xlsx
+*.xls
+
+# Saídas geradas
+*.png
+*.jpg
+
+# IDEs
+.vscode/
+.idea/
+*.code-workspace
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
