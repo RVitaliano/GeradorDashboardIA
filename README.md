@@ -12,8 +12,7 @@ Projeto complementar ao [GeradorRelatorioIA](https://github.com/RVitaliano/Gerad
 
 ---
 
-<img width="1920" height="1035" alt="Screenshot_7" src="https://github.com/user-attachments/assets/b8b92a8c-8219-4217-b638-818f6643ca5c" />
-
+<img width="1919" height="1030" alt="Screenshot_8" src="https://github.com/user-attachments/assets/642b77d7-6a88-4734-a84c-e1744438c539" />
 
 ---
 
