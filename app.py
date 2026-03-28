@@ -22,7 +22,6 @@ class App(ctk.CTk):
         self._build_ui()
 
     def _build_ui(self):
-        # Painel esquerdo (controles)
         self.painel = ctk.CTkFrame(self, width=260)
         self.painel.pack(side="left", fill="y", padx=10, pady=10)
 
@@ -53,13 +52,11 @@ class App(ctk.CTk):
             self.painel, text="", text_color="#4cc9f0", wraplength=220)
         self.label_status.pack(pady=10)
 
-        # Área de insights
         ctk.CTkLabel(self.painel, text="💡 Insights da IA:").pack(pady=(10, 5))
         self.txt_insights = ctk.CTkTextbox(
             self.painel, height=200, state="disabled")
         self.txt_insights.pack(padx=15, fill="both", expand=True, pady=(0, 10))
 
-        # Área principal (gráficos)
         self.area_graficos = ctk.CTkFrame(self)
         self.area_graficos.pack(side="right", fill="both",
                                  expand=True, padx=10, pady=10)
@@ -83,14 +80,12 @@ class App(ctk.CTk):
             sugestoes = analisar_e_sugerir(self.df)
             fig = gerar_figura(self.df, sugestoes)
 
-            # Atualiza UI na thread principal
             self.after(0, lambda: self._exibir(fig, sugestoes))
         except Exception as e:
             self.after(0, lambda: messagebox.showerror("Erro", str(e)))
             self.after(0, lambda: self.btn_gerar.configure(state="normal"))
 
     def _exibir(self, fig, sugestoes):
-        # Remove canvas antigo se existir
         if self.canvas_widget:
             self.canvas_widget.get_tk_widget().destroy()
 
@@ -99,7 +94,6 @@ class App(ctk.CTk):
         canvas.get_tk_widget().pack(fill="both", expand=True)
         self.canvas_widget = canvas
 
-        # Exibe insights
         self.txt_insights.configure(state="normal")
         self.txt_insights.delete("1.0", "end")
         for g in sugestoes:
