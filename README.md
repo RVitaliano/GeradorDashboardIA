@@ -12,6 +12,11 @@ Projeto complementar ao [GeradorRelatorioIA](https://github.com/RVitaliano/Gerad
 
 ---
 
+<img width="1920" height="1035" alt="Screenshot_7" src="https://github.com/user-attachments/assets/b8b92a8c-8219-4217-b638-818f6643ca5c" />
+
+
+---
+
 ## ⚙️ Tecnologias utilizadas
 
 | Tecnologia | Função |
